@@ -1,0 +1,733 @@
+/* Global 
+---------------------------------*/
+html {
+    box-sizing: border-box!important;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit!important;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #192026;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* hide scroll bar */
+    -ms-overflow-style: none;
+    /* Hides scrollbar in IE and Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Hides scrollbar in Chrome, Safari, and Opera */
+}
+
+
+
+
+/* Section 1
+---------------------------------- */
+section {
+    padding: 0 5%;
+    margin: 2% auto;
+    
+    max-width: 1300px;
+    
+
+}
+
+.exploreContainer {
+    background-image: url("/images/cover_batman3.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+    margin: 2%;
+    border-radius: 50px;
+}
+
+.explore-content {
+    position: absolute;
+    bottom: 0;
+    padding: 3%;
+    width: 50%;
+}
+
+.explore-content>h3 {
+    font-size: 3rem;
+}
+
+
+/* movies sections
+-------------------------------------- */
+h2 {
+    font-size: 2rem;
+}
+
+h2>span {
+    color: #db1414;
+}
+
+.newReleasesContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.movie-item {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.movie-item>h3 {
+    text-align: center;
+}
+
+.movie-detail {
+    visibility: hidden;
+    top: 99px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+.movie-detail a{
+    overflow: hidden;
+    text-wrap: nowrap;
+    width: 0;
+    height: 0;
+    font-size: 0.1rem;
+}
+.movie-container {
+    max-width: 170px;
+    margin: 10px;
+}
+
+.movie {
+    width: 170px;
+
+    position: relative;
+    max-height: 253.84px;
+    min-height: 253.84px;
+    text-align: center;
+    margin: 10px auto;
+
+
+}
+
+.movie>h3 {
+    position: absolute;
+    bottom: 0;
+    margin: 0 3% 3% 3%;
+    text-align: center;
+    max-width: 170px;
+
+}
+
+.movie-item .movie h3 {
+    width: 100%;
+}
+
+/* Home page movies
+----------------------------------------- */
+.movie1 {
+    background: url("/images/movies/American\ History\ X\ 1998.jpg");
+}
+
+.movie2 {
+    background: url("/images/movies/Dune\ Part\ Two\ 2024.jpg");
+}
+
+.movie3 {
+    background: url("/images/movies/Guardians\ of\ the\ Galaxy\ Vol.\ 3\ 2023.jpg");
+}
+
+.movie4 {
+    background: url("/images/movies/Lady\ Bird\ 2017.jpg");
+}
+
+.movie5 {
+    background: url("/images/movies/Looper\ 2012.jpg ");
+}
+
+.movie6 {
+    background: url("/images/movies/The\ Equalizer\ 3\ 2023.jpg");
+}
+/* Home page series
+---------------------------------------- */
+.series1{
+    background: url("/images/series/Fargo.jpg");
+}
+.series2{
+    background: url("/images/series/Mr\ Robot.jpg");
+}
+.series3{
+    background: url("/images/series/The\ Boys.jpg");
+}
+.series4{
+    background: url("/images/series/Masters\ of\ the\ Air.jpg");
+}
+.series5{
+    background: url("/images/series/Dexter.jpg");
+}
+.series6{
+    background: url("/images/series/Lost.jpg");
+}
+/* Home page Animes
+---------------------------------------- */
+.anime1 {
+    background: url("/images/animies/anime1.jpeg");
+}
+.anime2 {
+    background: url("/images/animies/anime2.jpg");
+}
+.anime3 {
+    background: url("/images/animies/anime3.jpeg");
+}
+.anime4 {
+    background: url("/images/animies/anime4.jpeg");
+}
+.anime5 {
+    background: url("/images/animies/anime5.webp");
+}
+.anime6 {
+    background: url("/images/animies/anime6.webp");
+}
+/*Movies page Turkish Movies
+---------------------------------- */
+.t-movie1 {
+    background: url("/images/movies/movieTurkish1.jpg");
+}
+.t-movie2 {
+    background: url("/images/movies/movieTurkish2.jpg");
+}
+
+.t-movie3 {
+    background: url("/images/movies/movieTurkish3.jpg");
+}
+
+.t-movie4 {
+    background: url("/images/movies/movieTurkish4.jpg");
+}
+/* Movies page Action Movies 
+--------------------------------*/
+.a-movie1 {
+    background: url("/images/movies/actionMovie1.avif");
+}
+.a-movie2 {
+    background: url("/images/movies/actionMovie2.avif");
+}
+.a-movie3 {
+    background: url("/images/movies/actionMovie3.avif");
+}
+.a-movie4 {
+    background: url("/images/movies/actionMovie4.jpeg");
+}
+
+
+
+/* Movies page Horror Movies
+---------------------------------- */
+.h-movie1 {
+    background: url("/images/movies/horrorMovie1.jpg");
+}
+.h-movie2 {
+    background: url("/images/movies/horrorMovie2.jpg");
+}
+.h-movie3 {
+    background: url("/images/movies/horrorMovie3.webp");
+}
+.h-movie4 {
+    background: url("/images/movies/horrorMovie4.jpg");
+}
+/* Series page Crime Series
+----------------------------------------- */
+.c-series1 {
+    background: url("/images/series/crimeSeries1.jpg");
+}
+.c-series2 {
+    background: url("/images/series/crimeSeries2.jpg");
+}
+.c-series3 {
+    background: url("/images/series/crimeSeries3.jpg");
+}
+.c-series4 {
+    background: url("/images/series/crimeSeries4.jpg");
+}
+.co-series1 {
+    background: url("/images/series/comedySeries1.jpg");
+}
+.co-series2 {
+    background: url("/images/series/comedySeries2.jpg");
+}
+.co-series3 {
+    background: url("/images/series/comedySeries3.jpg");
+}
+.co-series4 {
+    background: url("/images/series/comedySeries4.jpg");
+}
+.a-series1 {
+    background: url("/images/series/advantureSeries1.jpg");
+}
+.a-series2 {
+    background: url("/images/series/advantureSeries2.jpg");
+}
+.a-series3 {
+    background: url("/images/series/advantureSeries3.jpg");
+}
+.a-series4 {
+    background: url("/images/series/advantureSeries4.jpg");
+}
+/* Anime Page Top animes 
+-------------------------------------- */
+.t-anime1 {
+    background: url("/images/animies/anime1.jpeg");
+}
+.t-anime2 {
+    background: url("/images/animies/anime2.jpg");
+}
+.t-anime3 {
+    background: url("/images/animies/anime3.jpeg");
+}
+.t-anime4 {
+    background: url("/images/animies/anime4.jpeg");
+}
+
+/* Anime Page latest animes 
+-------------------------------------- */
+.l-anime1 {
+    background: url("/images/animies/Makeine.jpg");
+}
+.l-anime2 {
+    background: url("/images/animies/MAYONAKA\ PUNCH.jpg");
+}
+.l-anime3 {
+    background: url("/images/animies/Oshi\ no\ ko.jpg");
+}
+.l-anime4 {
+    background: url("/images/animies/Shoshimin.jpg");
+}
+
+/* Anime Page most popular animes 
+-------------------------------------- */
+.m-anime1 {
+    background: url("/images/animies/Attack\ on\ Titan.jpg");
+}
+.m-anime2 {
+    background: url("/images/animies/Death\ Note.jpg");
+}
+.m-anime3 {
+    background: url("/images/animies/anime1.jpeg");
+}
+.m-anime4 {
+    background: url("/images/animies/anime3.jpeg");
+}
+
+
+
+
+.movie {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* Movie hover */
+.movie-item:hover > .movie{
+
+    /* border: 1px #e4e4e4 solid; */
+    box-shadow: 1px 2px 10px 5px rgba(16, 32, 44);
+    /* width: 172px; */
+    /* bottom: 20px; */
+    opacity: 0.5;
+
+    transition: linear 0.3s;
+}
+
+.movie h3 {
+    text-transform: uppercase;
+    font-style: bold;
+    text-shadow: 2px 2px 2px #192026;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+
+}
+
+.movie-item>h3 {
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px #192026;
+    font-size: 1rem;
+}
+
+
+/* Footer
+------------------------------ */
+
+footer {
+    margin: 0;
+    background-color: #db1414;
+    min-height: 15vh;
+    font-size: 1rem;
+}
+
+.footer-rights {
+    width: 100%;
+    text-align: center;
+
+}
+.footer-rights p {
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+}
+
+.footer-item {
+    margin: 0 5%;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-link {
+    margin: 1rem 0;
+}
+
+.footer-item h4 {
+    font-style: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+
+
+/* 
+----------movies page--------- */
+.movie-category1-container span {
+    font-size: 2rem;
+    color: #db1414;
+}
+
+.category-list-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+
+
+
+/*
+-------------- select bar in movies page */
+.select-movie-dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 100px 8px 18px;
+    gap: 10px;
+    width: 450px;
+    height: 50px;
+    left: 70px;
+    top: 124px;
+
+    background: #374151;
+    border-radius: 37px;
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
+/* Navbar
+---------------------------------------- */
+
+.navbar-brand  h2{
+    color: #db1414;
+    text-shadow: 2px 2px 2px #db1414;
+    font-weight: 600!important;
+}
+.nav-link {
+    color: #e4e4e4!important;
+    opacity: .8;
+}
+.navbar-toggler {
+    color: #e4e4e4;
+    border: #e4e4e4 1px solid;
+    opacity: .8;
+}
+.form-control {
+    background-color: #374151;
+    border-radius: 50px;
+    border: none;
+    color: #e4e4e4!important;
+}
+.form-control:focus{
+    border: 2px solid #e4e4e4;
+    background-color: #374151;
+    transition:  .5s;
+}  
+.form-control::placeholder{
+    color: #e4e4e4;
+    opacity: .5;
+    
+}
+.form-control:hover {
+    border:2px solid #e4e4e4;
+    
+}
+.nav-link {
+    text-align: center;
+    
+
+}
+.nav-item {
+    border-radius: 25px;
+}
+.nav-item:hover {
+    background-color: #374151;
+
+    transition:  .5s;
+
+}
+
+.nav-link.active {
+    opacity: 1;
+    font-weight: 900;
+}
+
+/* Media Querys
+----------- ------------------------ */
+
+/* for small screens
+------------------------------------ */
+
+@media screen and (width < 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-item {
+        margin-top: 1rem;
+    }
+    .explore-content {
+        width: 100%;
+    }
+    .explore-content {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .explore-content p {
+        font-size: 0.8rem;
+    }
+    .content-container {
+        text-align: center;
+    }
+    .movie-detail-container {
+        flex-direction: column!important;
+        text-align: center;
+    }
+    .movie-detail-container .movie-container {
+        margin: auto!important;
+    }
+    .detail {
+        text-align: center;
+    }
+    .select-movie-dropdown {
+        margin: auto;
+    }
+}
+
+
+h3:hover{
+    color: #db1414;
+    cursor: pointer;
+}
+/* Initial styles for the button */
+
+
+.movie-item {
+    position: relative;
+    
+}
+.watch-button {
+    font-weight: 600; 
+    font-size: 1rem; 
+    color: white; 
+    background-color: #db1414; 
+    border-radius: 20px;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    text-align: center; 
+    border: none;
+    text-decoration: none;
+}
+
+.movie-item:hover > .movie-detail {
+    visibility: visible;
+
+
+
+}
+.movie-item:hover > .movie-detail a{
+width: 75%;
+height: 100%;
+font-size: .8rem;
+
+}
+.movie-item:hover > .movie-detail a{
+    transition: linear 0.3s;
+
+}
+.movie-detail a:hover{
+    box-shadow: 1px 1px 8px 2px #e4e4e4;
+}
+/* movie Shadow   */
+.movie::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgba(16, 32, 44), transparent);
+    height: 70%;
+    z-index: 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.movie-item  h3 {
+    z-index: 1;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+/* Content page
+-------------------------------------------- */
+.content-container h2{
+    font-size: 1.3rem;
+}
+.content-container {
+    justify-content: center;
+}
+.embed-responsive {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .embed-responsive-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .content-container {
+    margin: auto 1.5rem;
+  }
+.popular-animes-container {
+    width: 100%;
+    margin: 0;
+    justify-content: space-around;
+}
+.content-container .movie-container {
+    margin: 0;
+}
+.content-container .movie {
+    width: 100%!important;
+    height: 80%;
+
+}
+.content-container {
+    width: 90vw;
+    margin: auto;
+}
+
+.content-container .movie-detail {
+    font-size: 0.5rem!important;
+}
+
+
+.movie-detail-container {
+    display: flex; 
+    flex-direction: row;
+}
+.movie-detail-container ul {
+    list-style: none;
+
+}
+.detail {
+    margin: 15px 0 0 0 ;
+}
+.detail ul li:nth-of-type(1n){
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-style: bold;
+}
+.detail ul li:nth-of-type(2n) {
+    font-weight: 150;
+}
+.movie-detail-container .movie::after {
+ display: none;
+    
+}
+.popular-animes-container .movie-container {
+    min-width: 175px;
+}
+
+
+
+.navbar-collapse form {
+    min-width: 30vw;
+}
+.select-movie-dropdown {
+    width: 300px;
+    text-align: center;
+}
+.select-movie-dropdown * {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
