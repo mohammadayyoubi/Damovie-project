@@ -3,6 +3,7 @@
 ## Overview
 DAMOVIE is a comprehensive platform for streaming movies, series, and anime. Users can explore various categories, watch their favorite titles, and stay updated with the latest releases.
 This project till now is a frontend website project, and it is full responsive with all devices and browsers... soon we will add backend to it.
+It was developed with Omega team in CodeCrafts Bootcamp
 
 ## Features
 - **Categories**: Access a wide range of content, including Movies, Series, and Animes.
